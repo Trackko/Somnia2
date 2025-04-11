@@ -22,9 +22,7 @@ An advanced automation script to farm the **Somnia testnet** using multiple wall
 git clone https://github.com/your-username/Somnia2.git
 cd Somnia2
 
-### 🧪 Install Required Python Packages
+### 2.🧪 Install Required Python Packages
 pip install requests web3
 If you plan to use contract calls: pip install eth-account
 
-
-### 
