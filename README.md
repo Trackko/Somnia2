@@ -1,33 +1,30 @@
-# Somnia2
-
 # 🤖 Somnia Multi-Wallet Farming Bot
 
-Automated Somnia Testnet farming bot designed to manage 100+ wallets with human-like randomness and daily task distribution.
+An advanced automation script to farm the **Somnia testnet** using multiple wallets. This bot claims faucets and performs random token interactions with human-like behavior to avoid Sybil detection.
 
 ---
 
 ## 🔧 Features
 
-- ✅ Faucet claim (once daily per wallet)
-- 🎯 3–4 random Web3 interactions per wallet per day
-- 🤖 Random delays to mimic human behavior
-- 📒 Task logging to prevent duplicate actions
-- 📂 Modular structure for easy customization
-- 🛡️ Wallets are isolated to avoid Sybil detection patterns
+- 🚰 Automatic faucet claim for each wallet (once per day)
+- 🎯 3–4 random Web3 interactions per wallet (daily)
+- 🕒 Random delays between actions (to simulate human usage)
+- 📒 Logs every action to prevent duplication
+- 🔒 Wallets operate in isolation for safety & Sybil resistance
+- 📦 Modular structure for easy customization
 
 ---
 
-## 📁 Folder Structure
+## ⚙️ Setup Instructions
 
-somnia-bot/ ├── multiwallet_somnia_bot.py # Main runner script ├── wallets.json # List of wallets with private keys ├── modules/ │ ├── faucet.py # Faucet claim logic │ ├── tasks.py # Web3 interactions (mint, transfer, swap) ├── utils/ │ ├── logger.py # Action logger └── logs/ └── action_log.csv # Log of all actions per wallet
-
-
----
-
-## 🚀 How to Use
-
-### 1. Clone the Repo
+### 1. 📥 Clone the Repo
 ```bash
-git clone https://github.com/yourusername/Somnia2.git
+git clone https://github.com/your-username/Somnia2.git
 cd Somnia2
----
+
+### 🧪 Install Required Python Packages
+pip install requests web3
+If you plan to use contract calls: pip install eth-account
+
+
+### 
